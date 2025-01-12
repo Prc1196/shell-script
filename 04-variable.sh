@@ -1,7 +1,7 @@
 #!/bin/bash
 
-PERSON1=Ram # no sapce before and after equal
-PERSON2=Suresh
+PERSON1=$1 # no sapce before and after equal
+PERSON2=$2
 
 echo "${PERSON1}:: Hi $PERSON2"
 echo "${PERSON2}:: Hello $PERSON1"
