@@ -2,6 +2,6 @@
 
 echo "Please enter your username::" # text entered here will be added as a value to variable
 
-read USERNAME # here USERNAME is the variable name
+read -s USERNAME # here USERNAME is the variable name
 
 echo "username entered: $USERNAME"
