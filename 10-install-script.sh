@@ -8,7 +8,7 @@ then
     exit 1 #other than 0
 fi
 
-dnf installed list mysql
+dnf list installed  mysql
 
 if [ $? -ne 0 ] 
 then #not installed
@@ -24,7 +24,6 @@ else
     echo "MySQL is already ... INSTALLED"
 fi 
 
-
 # if [ $? -ne 0 ]
 # then 
 #     echo "Installing MySQL ... FAILURE"
@@ -33,7 +32,7 @@ fi
 #     echo "Installing MySQL ... SUCCESS"
 # fi
 
-dnf installed list git
+dnf list installed  git
 
 if [ $? -ne 0 ]
 then
