@@ -21,7 +21,7 @@ then #not installed
         echo "Installing MySQL ... SUCCESS"
     fi
 else
-    echo "MySQL is already ...INSTALLED"
+    echo "MySQL is already ... INSTALLED"
 fi 
 
 
@@ -46,7 +46,7 @@ then
         echo "Installing Git ... SUCCESS"
     fi
 else
-    echo "Git is already ...INSTALLED"
+    echo "Git is already ... INSTALLED"
 fi 
 
 
