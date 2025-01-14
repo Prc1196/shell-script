@@ -27,7 +27,7 @@ then
     exit 1 #other than 0
 fi
 
-dnf list installed  mysql &>>$LOG_FILE_NAME
+dnf list installed mysql &>>$LOG_FILE_NAME
 
 if [ $? -ne 0 ] 
 then #not installed
@@ -37,7 +37,7 @@ else
     echo -e "MySQL is already ... $Y INSTALLED"
 fi 
 
-dnf list installed  git &>>$LOG_FILE_NAME
+dnf list installed git &>>$LOG_FILE_NAME
 
 if [ $? -ne 0 ]
 then
