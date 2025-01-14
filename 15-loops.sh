@@ -21,7 +21,7 @@ VALIDATE(){
     fi
 }
 
- echo "script started executing at: $TIMESTAMP" &>>$LOG_FILE_NAME
+ echo "Script started executing at: $TIMESTAMP" &>>$LOG_FILE_NAME
 
 if [ $USERID -ne 0 ]
 then
@@ -32,7 +32,7 @@ fi
 for package in $@
 do
     dnf list installed $package &>>LOG_FILE_NAME
-    if [$? -ne 0 ]
+    if [ $? -ne 0 ]
     then 
         dnf install $package -y &>>LOG_FILE_NAME
         VALIDATE $? "Installing $package"
