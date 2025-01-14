@@ -10,7 +10,6 @@ TIMESTAMP=$(date +%Y-%m-%d-%H-%M-%S)
 LOG_FILE_NAME="$LOGS_FOLDER/$LOG_FILE-$TIMESTAMP.log"
 
 VALIDATE(){
-
     if [ $1 -ne 0 ]
     then 
         echo -e "$2 ... $R FAILURE"
@@ -21,6 +20,7 @@ VALIDATE(){
 }
 
 echo "script started executing at: $TIMESTAMP" &>>$LOG_FILE
+
 if [ $USERID -ne 0 ]
 then
     echo "ERROR:: You must have the sudo access to execute this srcipt"
@@ -36,8 +36,6 @@ then #not installed
 else
     echo -e "MySQL is already ... $Y INSTALLED"
 fi 
-
-
 
 dnf list installed  git
 
