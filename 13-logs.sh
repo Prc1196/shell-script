@@ -38,11 +38,11 @@ else
 fi 
 
 
-dnf list installed git &>>$LOG_FILE_NAME
+dnf list installed git &>>$LOG_FILE
 
 if [ $? -ne 0 ]
 then
-    dnf install git -y &>>$LOG_FILE_NAME
+    dnf install git -y &>>$LOG_FILE
     VALIDATE $? "Installing Git"
 else
     echo -e "Git is already ... $Y INSTALLED"
