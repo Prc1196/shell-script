@@ -32,17 +32,18 @@ dnf list installed mysql &>>$LOG_FILE_NAME
 if [ $? -ne 0 ] 
 then #not installed
     dnf install mysql -y &>>$LOG_FILE_NAME
-    VALIDATE $? "Insatlling mysql"
+    VALIDATE $? "Installing mysql"
 else
     echo -e "MySQL is already ... $Y INSTALLED"
 fi 
+
 
 dnf list installed git &>>$LOG_FILE_NAME
 
 if [ $? -ne 0 ]
 then
     dnf install git -y &>>$LOG_FILE_NAME
-    VALIDATE $? " Installing Git"
+    VALIDATE $? "Installing Git"
 else
     echo -e "Git is already ... $Y INSTALLED"
 fi 
