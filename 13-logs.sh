@@ -23,7 +23,7 @@ echo "script started executing at: $TIMESTAMP" &>>$LOG_FILE_NAME
 
 if [ $USERID -ne 0 ]
 then
-    echo "ERROR:: You must have the sudo access to execute this srcipt"
+    echo "ERROR:: You must have sudo access to execute this srcipt"
     exit 1 #other than 0
 fi
 
@@ -32,7 +32,7 @@ dnf list installed mysql &>>$LOG_FILE_NAME
 if [ $? -ne 0 ] 
 then #not installed
     dnf install mysql -y &>>$LOG_FILE_NAME
-    VALIDATE $? "Installing mysql"
+    VALIDATE $? "Installing MySQL"
 else
     echo -e "MySQL is already ... $Y INSTALLED"
 fi 
