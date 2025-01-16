@@ -1,10 +1,8 @@
 #!/bin/bash
 
 MSG="script-1"
-MSG2="script-2"
 
-if
-    echo "Hello from: $MSG"
-then 
-    echo "Hi from: $MSG2"
-fi 
+echo "Hello from: $MSG"
+
+sh 21-script-2.sh
+
