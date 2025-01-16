@@ -3,5 +3,8 @@
 MSG="script-1"
 MSG2="script-2"
 
-echo "Hello from: $MSG"
-echo "hi from: $MSG2"
+if
+    echo "Hello from: $MSG"
+then 
+    echo "Hi from: $MSG2"
+fi 
