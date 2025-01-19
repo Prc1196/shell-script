@@ -7,3 +7,5 @@ MSG="script-1"
 
 
 echo "Hello from: $MSG"
+echo "HELLO PRADEEP:$MSG"
+
