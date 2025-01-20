@@ -7,3 +7,5 @@ TEXT="Available"
 echo "Hello from: $MSG"
 
 echo "Greeting: $GREET"
+
+echo "available: $TEXT"
