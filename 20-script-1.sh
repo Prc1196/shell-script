@@ -7,6 +7,6 @@ source ./21-script-2.sh
 echo "Hello from: $MSG"
 echo "A value: $A"
 echo "B value: $B"
-source "Available: $TEXT"
+source ./"Available: $TEXT"
 #sh 21-script-2.sh
 
